@@ -17,6 +17,32 @@ public class Main {
 
         input = driver.findElement(By.xpath("//*[@id=\"input-firstname\"]"));
         input.click();
+        input.sendKeys("Go");
+
+        input = driver.findElement(By.xpath("//*[@id=\"input-lastname\"]"));
+        input.click();
+        input.sendKeys("Go2");
+
+        input = driver.findElement(By.xpath("//*[@id=\"input-email\"]"));
+        input.click();
+        input.sendKeys("Go3@gmail.com");
+
+        input = driver.findElement(By.xpath("//*[@id=\"input-telephone\"]"));
+        input.click();
+        input.sendKeys("3809677777777");
+
+        input = driver.findElement(By.xpath("//*[@id=\"input-password\"]"));
+        input.click();
+        input.sendKeys("38123");
+
+        input = driver.findElement(By.xpath("//*[@id=\"input-confirm\"]"));
+        input.click();
+        input.sendKeys("38123");
+
+        input = driver.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[1]"));
+        input.click();
+        input.submit();
+
 
     }
 }
